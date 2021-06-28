@@ -523,6 +523,9 @@ workflows:
           name: "base 14.16.0"
           dockerTag: "14.16.0"
       - build-base-image:
+          name: "base 14.17.1"
+          dockerTag: "14.17.1"
+      - build-base-image:
           name: "base 14.5.0"
           dockerTag: "14.5.0"
       - build-base-image:
@@ -593,6 +596,10 @@ workflows:
           dockerTag: "node14.16.0-chrome90-ff88"
           chromeVersion: "Google Chrome 90"
           firefoxVersion: "Mozilla Firefox 88"
+      - build-browser-image:
+          name: "browsers node14.17.1-chrome91"
+          dockerTag: "node14.17.1-chrome91"
+          chromeVersion: "Google Chrome 91"
       - build-browser-image:
           name: "browsers node14.7.0-chrome84"
           dockerTag: "node14.7.0-chrome84"
